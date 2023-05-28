@@ -5,11 +5,22 @@
 </head>
 <body>
     <script>
+        //global
         var tester = "hey hi";
+        var hello = 's';
+        let l;
 
         function newFunction() {
+            //local
             var hello = "hello";
+            let l;
+            if(true){
+                var zello = "hello";
+            }
+            console.log(zello); // error: hello is not defined
+            return hello;
         }
+
         console.log(hello); // error: hello is not defined
     </script>
 </body>

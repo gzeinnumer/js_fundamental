@@ -9,7 +9,9 @@
 </head>
 <body>
     <script  type="text/javascript">
-        $(function(){
+        //initFun(); //lansung eksekusi 
+
+        $(function(){ // nunggu UI ke render dulu
             initFun();
         });
 
@@ -17,8 +19,11 @@
             for(var i=0; i<10; i++){
                 console.log(i);
             }
-            for (var i = 0; i < 10; i++) {
-                if(i%2==0){
+            
+            for (let i = 0; i < 10; i++) {
+                if(i == 0){
+                    console.log(i + " Nilai Awal");
+                } else if(i % 2==0){
                     console.log(i + " Genap");
                 } else{
                     console.log(i + " Ganjil");

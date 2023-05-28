@@ -15,16 +15,23 @@
 
         function initFun() {
 
-            const obj = 
+            var obj = 
                 {
-                    name:"Banana", 
-                    code:"Fruit"
+                    name : "Banana", 
+                    code : "Fruit",
+                    obj : {
+                            name: "Apple",
+                            code: "Fruit",
+                        }
                 }
             ;
 
             console.log(obj);
+                        //parent.child
             console.log(obj.name);
-            console.log(obj.code);
+                        //parent.child.child
+            console.log(obj.obj.name);
+            //console.log(obj.code);
             console.log("----------------------");
         }
         

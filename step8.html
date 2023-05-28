@@ -14,11 +14,17 @@
         });
 
         function initFun() {
-            const cars = ["Saab", "Volvo", "BMW"];
+            var car = "Saab";
+                        //0     //1       //2
+            var cars = ["Saab", "Volvo", "BMW"];
+                        // 3
             cars.push("avanza");
-
+                        //4
+            cars.push("xenia");
+            cars.push("xpander");
+                            //4
             for(var i=0; i<cars.length; i++){
-                console.log(cars[i])
+                console.log(i+" - "+cars[i])
             }
         }
         

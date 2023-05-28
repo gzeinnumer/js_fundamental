@@ -7,8 +7,50 @@
     <script>
         var greeter = "hey hi";
 
+        //newFunction();
+        //newFunction();
+        //newFunction();
+        //newFunction();
+        //newFunction();
+
         function newFunction() {
             var hello = "hello";
+            var bello = "bello";
+            var zello = "zello";
+            console.log(hello);
+            console.log(bello);
+            console.log(zello);
+        }
+        
+        diskon(1000, 10);
+        //diskon(2000);
+        var d = diskon(10,10);
+        console.log(d);
+        
+        //void = tidak ada return
+        function diskon(harga, diskon){
+            var nilaiHarga = harga;
+            var nilaiDiskon = diskon;
+
+            var totalDiskon = nilaiHarga * nilaiDiskon /100;
+            //2000*undifined/100 = NaN
+            //2000*100/100 = 200
+
+            console.log(totalDiskon);
+        }
+
+        sum(1,2); //3
+        var hasil = sum(2,2);
+        console.log(hasil);
+
+        //return = ada return di dalam
+        function sum(nilai1, nilai2){
+            //return nilai1 + nilai2;
+
+            var hasil = nilai1 + nilai2;
+            //console.log(hasil);
+
+            return hasil;
         }
     </script>
 </body>
